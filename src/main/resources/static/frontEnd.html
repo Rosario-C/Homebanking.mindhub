@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./estilos.css">
+
+    <title>HomeBanking</title>
+</head>
+
+<body>
+    <div id="app">      
+        <div class="container-fluid row">         
+            <div class=" izquierda col-sm">
+                <div> 
+                    <h2 >Client Manager</h2>
+                    <form v-on:submit= "postClients">
+                        <label for="" class="formulario d-flex flex-column">
+                            Nombre: <input type="text" v-model="nombre" required>
+                        </label>
+                        <label for="" class="formulario d-flex flex-column">
+                            Apellido: <input type="text" v-model="apellido" required>
+                        </label>
+                        <label for="" class="formulario d-flex flex-column">
+                            E-mail :<input type="email" name="" id="" v-model="mail" required>
+                        </label>
+                        <button type="submit" class="btn btn-success m-1">Add Clients</button>
+                    </form>
+                </div>
+                <div>
+
+                    <h2>Client List</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">E-mail</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="client in clients">
+                                <td>{{client.firstName}}</td>
+                                <td>{{client.lastName}}</td>
+                                <td>{{client.email}}</td>
+                                <td> <button class="btn btn-outline-success" v-on:click="deleteClient(client)">Delete Client</button></td>
+                                <td> <button class="btn btn-outline-danger" v-on:click="editClient(client)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="json" class=" derecha col-sm">
+                <h2>Client REST response</h2>
+                <pre>{{Json}}</pre>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./frontEnd.js"></script>
+</body>
+
+</html>

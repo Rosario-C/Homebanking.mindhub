@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/createCards.css">
+    <title>New Card</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="contenedor">
+            <!-- <form id="signup" class="input_group">
+                <select v-model="cardType">
+                    <option value="DÉBITO">Debit</option>
+                    <option value="CRÉDITO">Credit</option>
+                </select>
+                <select v-model="cardColor">
+                    <option value="GOLDEN">Golden</option>
+                    <option value="SILVER">Silver</option>
+                    <option value="TITANIUM">Titanium</option>
+                </select>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="button" class="submit_btn" v-on:click="newCard">Create</button>
+            </form>
+      -->
+
+            <div class="container">
+                <div class="form_box">
+                    <form id="signup" class="input_group">
+                        <label for=""> Choose a card Type
+                        <select v-model="cardType" class="input_field" required>
+                            <option value="DÉBITO">Debit</option>
+                            <option value="CRÉDITO">Credit</option>
+                        </select>
+                    </label>
+                    <label for="">Choose a color
+                        <select v-model="cardColor" class="input_field" required>
+                            <option value="GOLDEN">Golden</option>
+                            <option value="SILVER">Silver</option>
+                            <option value="TITANIUM">Titanium</option>
+                        </select>
+                    </label>
+                        <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                        <button type="button" class="submit_btn" v-on:click="newCard">Create</button>
+                        <!-- <input type="email" class="input_field" v-model="email" placeholder="Email" required>
+                    <input type="password" class="input_field"  v-model="password" placeholder="Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember password</span>
+                    <button type="submit" class="submit_btn">Login</button> -->
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/createCard.js"></script>
+</body>
+
+</html>

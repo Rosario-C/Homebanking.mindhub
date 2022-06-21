@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>MBB-SING IN</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="container">
+            <div class="form_box">
+                <div class="button_box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle_btn"  onclick="login()">Login</button>
+                    <button type="button" class="toggle_btn" onclick="signup()">Register</button>
+                </div>
+                <div class="social_icons">
+                    <i class='bx bxl-facebook-circle' style='color:#2f2fd8'  ></i>
+                    <i class='bx bxl-google' style='color:#ffffff'  ></i>
+                    <i class='bx bxl-github' style='color:#ffffff'  ></i>
+                </div>
+                <form v-on:submit.prevent="signIn" id="login" class="input_group">
+                    <input type="email" class="input_field" v-model="email" placeholder="Email" required>
+                    <input type="password" class="input_field"  v-model="password" placeholder="Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember password</span>
+                    <button type="submit" class="submit_btn">Login</button>
+                </form>
+                <form id="signup" class="input_group">
+                    <input type="text" class="input_field" v-model="newName" placeholder="FirstName" required>
+                    <input type="text" class="input_field" v-model="newLastname" placeholder="LastName" required>
+                    <input type="email" class="input_field" v-model="newEmail"  placeholder="Email" required>
+                    <input type="password" class="input_field" v-model="newPassword" placeholder="Password" required>
+                    <input type="checkbox" class="checkbox"><span>I agree to the terms & conditiond</span>
+                    <button type="submit" class="submit_btn" v-on:click="signUp">SignUp</button>
+                </form>
+            </div>
+            
+
+        </div>
+
+      
+
+
+
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue@3"></script>
+<script src="./js/index.js"></script>
+
+</html>

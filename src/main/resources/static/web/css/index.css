@@ -1,0 +1,112 @@
+ @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navbar*/
+.navbar .navbar-expand-lg .bg-light .navbar-brand .navbar-toggler .navbarNavDropdown{
+    background-color: #e74c3c !important;
+}
+/*-----*/
+.container{
+    height: 100%;
+    width: 100%;
+    /* background-color:#16a085; */
+    background-image: url("../img/lines-g8d403116a_1920.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    position: absolute;
+
+}
+.form_box{
+    width: 380px;
+    height: 480px;
+    margin:6% auto;
+    position: relative;
+    background-color:rgb(184, 173, 160);
+    padding: 5px; 
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.button_box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle_btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 110px;
+    height: 100%;
+    border-radius:30px;
+    transition: .5s;
+    background: linear-gradient(to right,#f372f3,#e74c3c );
+}
+.social_icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social_icons i{
+/* width: 30px; */
+margin: 0 12px;
+box-shadow: 0 0 20px 0 #7f7f7f3d;
+cursor: pointer;
+transform: scale(2);
+border-radius: 50%;
+}
+.input_group{
+    top:180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input_field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit_btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:linear-gradient(to right,#f372f3,#e74c3c );
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#signup{
+    left: 450px;
+}
