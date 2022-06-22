@@ -35,8 +35,8 @@ Vue.createApp({
                 headers: {
                     'content-type': 'application/x-www-form-urlencoded'
                 }
-            }).then(response => {this.email =this.newEmail, this.password = this.newPassword,
-                this.signIn()
+            }).then(response => {this.email =this.newEmail, this.password = this.newPassword
+             
                 .then(response => {
                 window.location.href = "/web/accounts.html"
             })
