@@ -14,7 +14,7 @@ Vue.createApp({
     },
 
     created() {
-        axios.get("http://localhost:8080/api/clients/current")
+        axios.get("/api/clients/current")
         .then(datos => {
             this.accounts = datos.data.accounts
         }),
@@ -22,7 +22,7 @@ Vue.createApp({
         .then(datos => {
             this.loans= datos.data
             this.loans = this.loans.sort((a, b) => a.id - b.id)
-            console.log(this.loans)
+            
 
         })
 
@@ -32,7 +32,7 @@ Vue.createApp({
 
         signOut() {
             axios.post('/api/logout').then(response => {
-                console.log('signed out!!!')
+               
                 window.location.href = "/web/index.html"
             })
         },
@@ -53,7 +53,7 @@ Vue.createApp({
                         // headers: {
                         //     'content-type': 'application/JSON'
                         // }
-                    ).then(response => console.log("Loan Approved"))
+                    )
 
                         .then(() => {
                             Swal.fire({
