@@ -9,7 +9,7 @@ Vue.createApp({
     },
 
     created() {
-        axios.get("http://localhost:8080/api/clients/current")
+        axios.get("/api/clients/current")
         .then(datos =>{
             this.accounts = datos.data.accounts
             this.nombre = datos.data.firstName

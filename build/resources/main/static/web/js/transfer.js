@@ -16,7 +16,7 @@ Vue.createApp({
             },
 
             created() {
-                axios.get("http://localhost:8080/api/clients/current")
+                axios.get("/api/clients/current")
                     .then(datos => {
                         this.accounts = datos.data.accounts
                         this.nombre = datos.data.firstName
@@ -28,7 +28,7 @@ Vue.createApp({
             methods: {
                 signOut() {
                     axios.post('/api/logout').then(response => {
-                        console.log('signed out!!!')
+                        // console.log('signed out!!!')
                         window.location.href = "/web/index.html"
                     })
                 },
@@ -51,8 +51,7 @@ Vue.createApp({
                                         headers: {
                                             'content-type': 'application/x-www-form-urlencoded'
                                         }
-                                    }).then(response => console.log("hola"))
-
+                                    })
                                     .then(() => {
                                         Swal.fire({
                                             title: 'Exitos!',
@@ -93,7 +92,7 @@ Vue.createApp({
                     //         }
                     //     })
 
-                    //http://localhost:8080/api/transactions?amount=300&description=para el postre&originAccountNumber=VIN003&destinationAccountNumber=VIN002
+                    ///api/transactions?amount=300&description=para el postre&originAccountNumber=VIN003&destinationAccountNumber=VIN002
 
 
 

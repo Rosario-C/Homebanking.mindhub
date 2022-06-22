@@ -10,7 +10,7 @@ Vue.createApp({
     },
     created() {
         
-        axios.get("http://localhost:8080/api/clients/current")
+        axios.get("/api/clients/current")
             .then(datos =>{
                 this.accounts = datos.data.accounts
                 this.nombre = datos.data.firstName
@@ -25,7 +25,7 @@ Vue.createApp({
     methods: {
         
     signOut(){
-        axios.post('/api/logout').then(response =>{ console.log('signed out!!!')
+        axios.post('/api/logout').then(response =>{ 
         window.location.href = "/web/index.html"
     })
     },

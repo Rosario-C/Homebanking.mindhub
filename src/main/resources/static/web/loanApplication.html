@@ -20,9 +20,9 @@
                 <h1>MINDHUB BROTHERS' BANK</h1>
             </div>
         </header>
-        <nav class="navbar navbar-expand-lg bg-dark  d-flex  gap-5">
+        <nav class="navbar navbar-expand-lg bg-light  gap-5">
             <div class="container-fluid">
-                <section class="navbar-brand "> {{nombre}} </section>
+                <section class="navbar-brand"> {{nombre}} </section>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,12 +31,12 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./accounts.html">Your Accounts</a>
+                            <a class="nav-link" href="./accounts.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Movements
+                                Your Accounts
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li class="dropdown-item" v-for="account in accounts">
@@ -50,17 +50,17 @@
                             <a class="nav-link" href="#">Apply for Loans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Transfer</a>
+                            <a class="nav-link" href="./transfer.html">Transfer</a>
                         </li>
-                        <li class="nav-item dropdown bg-dark">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 More Options
                             </a>
-                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item bg-dark" href="#">Configuration</a></li>
-                                <li><a class="dropdown-item bg-dark" href="#">Help</a></li>
-                                <li><a class="dropdown-item bg-dark" v-on:click="signOut">Sing Out</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Configuration</a></li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" v-on:click="signOut">Sing Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,38 +68,7 @@
             </div>
         </nav>
         <main>
-            <!-- <form action="" v-on:submit.prevent="applyLoan">
-                <label for="">Select a Loan
-                    <select name="Select a Loan" v-model="loanTypeId">
-                        <option :value="loan.id" v-for="loan in loans"> {{loan.name}}</option>
-                    </select>
-                </label>
-                <div class="el monto max de cada uno">
-                    <label for="">Choose an amount
-                        <input type="number" v-model="amount">
-                    </label>
-                </div>-
-                <div class="cuotas">
-                    <div v-if="loans.length >= 0">
-                        <select class="form-style" v-model="payments">
-                            <option value="" selected disabled hidden>Options Payments</option>
-                            <option :value="payments" v-for="payments in selecPayments()">{{payments}}</option>
-                        </select>
-                    </div>-
-                </div>
-                <div class="cuenta destino">
-                    <select v-model="borrowerAccount">
-                        <option value="" selected disabled>Choose an account</option>
-                        <option v-for="account in accounts" :value="account.number">{{account.number}} -
-                            balance ${{account.balance}}</option>
-                    </select>
-                </div>-
-                <div v-if="amount > 0 ">
-                    <span v-show="(parseInt(amount) * 1.2)/parseInt(payments)!=Infinity">Amount % account : $ {{((parseInt(amount) * 1.2)/parseInt(payments)).toFixed(2)}} </span>
-                </div>
-                <button class="btn btn" type="submit" >Apply Loan</button>
-
-            </form> -->
+          
 
             <div class="divContenedor">
                 <div class="form_box">

@@ -22,7 +22,6 @@ Vue.createApp({
                     'content-type': 'application/x-www-form-urlencoded'
                 }
             }).then(response => {
-                
                 window.location.href = "/web/accounts.html"
             })
         },

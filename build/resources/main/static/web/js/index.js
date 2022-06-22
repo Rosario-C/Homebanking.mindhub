@@ -13,9 +13,6 @@ Vue.createApp({
 
     created() {
 
-
-
-
     },
 
     methods: {
@@ -25,13 +22,11 @@ Vue.createApp({
                     'content-type': 'application/x-www-form-urlencoded'
                 }
             }).then(response => {
-                console.log('signed in!!!')
                 window.location.href = "/web/accounts.html"
             })
         },
         signOut() {
             axios.post('/api/logout').then(response => {
-                console.log('signed out!!!')
                 window.location.href = "/web/index.html"
             })
         },
@@ -42,12 +37,11 @@ Vue.createApp({
                 }
             }).then(response => {this.email =this.newEmail, this.password = this.newPassword,
                 this.signIn()
-                .then(response => {console.log("registred&logged")
+                .then(response => {
                 window.location.href = "/web/accounts.html"
             })
         })
         }
-
 
     },
 
