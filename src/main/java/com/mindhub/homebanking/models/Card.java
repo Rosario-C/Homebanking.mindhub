@@ -30,8 +30,6 @@ public class Card {
 
     public Card (){}
 
-
-
     public Card(String cardHolder, CardType type, CardColor color, String number, int cvv, LocalDateTime fromDate, LocalDateTime thruDate, Client client, boolean expired) {
         this.cardHolder = cardHolder;
         this.type = type;

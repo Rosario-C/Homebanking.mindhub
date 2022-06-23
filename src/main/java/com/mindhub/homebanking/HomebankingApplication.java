@@ -78,6 +78,7 @@ public class HomebankingApplication {
 
 
 
+
 			Loan hipotecario = new Loan("Hipotecario", 500000, List.of(12, 24, 36,48,60));
 			loanRepository.save(hipotecario);
 

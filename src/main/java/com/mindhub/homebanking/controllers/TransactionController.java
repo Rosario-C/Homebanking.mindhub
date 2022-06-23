@@ -51,7 +51,7 @@ public class TransactionController {
             return new ResponseEntity<>("Missing description", HttpStatus.FORBIDDEN);
 
         }
-        if (amount.isNaN() || amount.isInfinite() || amount == 0) {
+        if (amount.isNaN() || amount.isInfinite() || amount <= 0) {
 
             return new ResponseEntity<>("no se puede", HttpStatus.FORBIDDEN);
 

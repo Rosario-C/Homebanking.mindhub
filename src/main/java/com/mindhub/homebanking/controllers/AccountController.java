@@ -78,9 +78,7 @@ public class AccountController {
         return new ResponseEntity<>(HttpStatus.CREATED);
 
     }
-
     @GetMapping( "/clients/current/accounts")
-
     Set<AccountDTO> accountSet(Authentication authentication){
         Client client = clientService.getClientByEmail(authentication.getName());
             return client.getAccounts().stream().map(account -> new AccountDTO(account)).collect(toSet());

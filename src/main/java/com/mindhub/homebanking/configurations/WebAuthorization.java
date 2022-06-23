@@ -33,7 +33,7 @@ class WebAuthorization extends WebSecurityConfigurerAdapter {
                 .antMatchers("/rest/**").hasAuthority("ADMIN")
                 .antMatchers("/h2-console/**").hasAuthority("ADMIN")
                 .antMatchers(" /api/clients/current/**").hasAuthority("CLIENT")
-                .antMatchers("/web/**").hasAuthority("CLIENT");
+                .antMatchers("/web/**").hasAnyAuthority("CLIENT", "ADMIN");
 
 
 

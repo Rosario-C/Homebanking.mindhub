@@ -65,6 +65,7 @@ import static java.util.stream.Collectors.toList;
 
             }
 
+
             Client newClient = new Client(firstName, lastName, email, passwordEncoder.encode(password));
             clientService.saveClient(newClient);
 
