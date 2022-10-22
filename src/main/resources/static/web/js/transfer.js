@@ -83,18 +83,5 @@ Vue.createApp({
 
 
 
-
-
-                    //   .then(response =>  window.location.href = "/web/accounts.html")
-                    // axios.post('/api/transactions', `amount=${this.amount}&description=${this.description}&originAccountNumber=${this.cuentaP}&destinationAccountNumber=${this.cuentaD}`, {
-                    //         headers: {
-                    //             'content-type': 'application/x-www-form-urlencoded'
-                    //         }
-                    //     })
-
-                    ///api/transactions?amount=300&description=para el postre&originAccountNumber=VIN003&destinationAccountNumber=VIN002
-
-
-
                 }
                 }).mount('#app')
