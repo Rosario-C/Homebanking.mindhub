@@ -23,11 +23,7 @@ Vue.createApp({
 
     methods: {
         newCard(){
-            axios.post('/api/clients/current/cards', `type=${this.cardType}&color=${this.cardColor}`, {
-                headers: {
-                    'content-type': 'application/x-www-form-urlencoded'
-                }
-            }).then(response => {
+            axios.post('/api/clients/current/cards', `type=${this.cardType}&color=${this.cardColor}`).then(response => {
                 
                 window.location.href = "/web/cards.html"
             })

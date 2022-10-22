@@ -50,9 +50,7 @@ Vue.createApp({
                 if (result.isConfirmed) {
                 
                     axios.post('/api/loans',{loanId:this.loanTypeId,borrowerAccount:this.borrowerAccount,amount:this.amount,payments:this.payments} //
-                        // headers: {
-                        //     'content-type': 'application/JSON'
-                        // }
+
                     )
 
                         .then(() => {
