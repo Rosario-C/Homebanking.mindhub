@@ -75,16 +75,7 @@ public class CardController {
             return new ResponseEntity<>("You can not have more than 3 cards", HttpStatus.FORBIDDEN);
 
         }
-        if (cardCredit.isEmpty()) {
 
-            return new ResponseEntity<>("You must select a Card Type", HttpStatus.FORBIDDEN);
-
-        }
-        if (cardDebit.isEmpty()) {
-
-            return new ResponseEntity<>("You must select a Card Type", HttpStatus.FORBIDDEN);
-
-        }
 
 
         cardService.saveCard(new Card(client.getFirstName() +" "+ client.getLastName(), type, color, getRandomNumber(1000,9999) +"-"+ getRandomNumber(1000, 9999) +"-"+ getRandomNumber(1000, 9999) +"-"+ getRandomNumber(1000, 9999), getRandomNumber(100, 999), LocalDateTime.now(), LocalDateTime.now().plusYears(5), client, false ));
