@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2e19183-d600-475a-a29c-7574f1de0ba4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/configurations/WebAuthorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/configurations/WebAuthorization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/controllers/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/controllers/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/controllers/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/classes/java/main/com/mindhub/homebanking/controllers/TransactionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/cards.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/createCards.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/createCards.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/cuenta.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/cuenta.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/loanApplication.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/loanApplication.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/transfer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/resources/main/static/web/css/transfer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/mindhub/homebanking/HomebankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/mindhub/homebanking/HomebankingApplication.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2Dta5R7YiEQ4IMnLY48a7UiAGz5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/rosar/Desktop/Tareas entregadas Ro/tareas entregadas/diosquierafunke/homebanking/src/main/resources/static"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2e19183-d600-475a-a29c-7574f1de0ba4" name="Changes" comment="" />
+      <created>1661520650710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661520650710</updated>
+    </task>
+    <servers />
+  </component>
+</project>

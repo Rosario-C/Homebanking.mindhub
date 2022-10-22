@@ -1,11 +1,6 @@
 package com.mindhub.homebanking.dto;
 
-import com.mindhub.homebanking.models.ClientLoan;
-import com.mindhub.homebanking.models.Loan;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class LoanApplicationDTO {
 

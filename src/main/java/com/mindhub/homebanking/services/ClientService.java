@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 import java.util.List;
 
 public interface ClientService {
-    //pirmero hacemos un metodo para obtener un alista de clientes dto
+    //pirmero hacemos un metodo para obtener una lista de clientes dto
     public List<ClientDTO> getClientsDTO();
     public Client getClientCurrent(Authentication authentication);
     ClientDTO getClientDTO(Long id);

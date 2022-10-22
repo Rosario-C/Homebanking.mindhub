@@ -17,11 +17,8 @@ Vue.createApp({
 
     methods: {
         signIn() {
-            axios.post('/api/login', `email=${this.email}&password=${this.password}`, {
-                headers: {
-                    'content-type': 'application/x-www-form-urlencoded'
-                }
-            }).then(response => {
+            axios.post('/api/login', `email=${this.email}&password=${this.password}`
+            ).then(response => {
                 window.location.href = "/web/accounts.html"
             })
         },
@@ -31,11 +28,9 @@ Vue.createApp({
             })
         },
         signUp() {
-            axios.post('/api/clients', `firstName=${this.newName}&lastName=${this.newLastname}&email=${this.newEmail}&password=${this.newPassword}`, {
-                headers: {
-                    'content-type': 'application/x-www-form-urlencoded'
-                }
-            }).then(response => {this.email =this.newEmail, this.password = this.newPassword
+            axios.post('/api/clients', `firstName=${this.newName}&lastName=${this.newLastname}&email=${this.newEmail}&password=${this.newPassword}`
+
+            ).then(response => {this.email =this.newEmail, this.password = this.newPassword
              
                 .then(response => {
                 window.location.href = "/web/accounts.html"
